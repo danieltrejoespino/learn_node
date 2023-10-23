@@ -3,5 +3,5 @@ const http = require('http');
 
 const server_ = http.createServer((req,res)=>{
     
-    res.end();
+    res.end('Hi, world');
 });
