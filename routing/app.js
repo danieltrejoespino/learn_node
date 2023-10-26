@@ -13,7 +13,8 @@ const server=http.createServer((req,res)=>{
       console.log(`url: ${req.url} Method: ${req.method}`);
       return handle_request_post(req,res)          
     default:
-      console.log(`Method ${method} dont allow`);
+      res.statusCode=501
+      res.end(`Method ${method} dont allow`)     
       break;
   }
 });

@@ -1,4 +1,9 @@
 POST http://localhost:3008/add/courses/programming HTTP/1.1
-# GET  http://localhost:3008/ HTTP/1.1
-# GET  http://localhost:3008/courses HTTP/1.1
-# GET  http://localhost:3008/test HTTP/1.1
+###
+GET  http://localhost:3008/ HTTP/1.1
+###
+GET  http://localhost:3008/courses HTTP/1.1
+###
+GET  http://localhost:3008/test HTTP/1.1
+###
+PUT http://localhost:3008/ HTTP/1.1
