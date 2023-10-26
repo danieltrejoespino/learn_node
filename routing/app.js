@@ -10,7 +10,7 @@ const server=http.createServer((req,res)=>{
       console.log(`url: ${req.url} Method: ${req.method}`);
       return handle_request_get(req,res)              
     case 'POST':
-      console.log(`Method type ${method}`);
+      console.log(`url: ${req.url} Method: ${req.method}`);
       return handle_request_post(req,res)          
     default:
       console.log(`Method ${method} dont allow`);
@@ -37,7 +37,11 @@ function handle_request_get(req,res) {
 }
 
 function handle_request_post(req,res) {
-  
+  const path=req.url;
+  if (path==='/add/courses/programming') {
+    res.statusCode=200;
+    res.end('add... new programming course')
+  }
 }
 
 
