@@ -1,1 +1,3 @@
-console.log('prueba');
+const express=require('express');
+const app= express();
+const port=3007;
